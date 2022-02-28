@@ -1,0 +1,94 @@
+@media screen and (max-width: 640px) {
+  #menu {
+    background: rgb(102, 102, 204);
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+  #menu {
+    background: white;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #menu {
+    background: green;
+  }
+}
+
+  
+  body{
+    background-image: url(https://1.bp.blogspot.com/-ZlKthaGxmN8/UB6tu4_lo-I/AAAAAAAAD-I/VXOXyFT5Bks/s640/Pokemon+Wall++%252828%2529.jpg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+  h1{
+    font-size: 150%;
+    font-family: cursive, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1.875rem 0rem 1.875rem 0rem;
+    background-color: #a0a8d3;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+  #menu{
+    margin: 3%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #selection{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #a0a8d3;
+    box-sizing: border-box;
+    color: #3bbb66ec;
+    text-align-last:center;
+    cursor: pointer;
+    font-family:'Rozha One', serif;;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    min-width: 130px;
+}
+  
+#order{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #a0a8d3;
+    box-sizing: border-box;
+    color: #3bbb66ec;
+    text-align-last:center;
+    cursor: pointer;
+    font-family:'Rozha One', serif;;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    min-width: 130px;
+}
+
+#region{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #a0a8d3;
+    box-sizing: border-box;
+    color: #3bbb66ec;
+    text-align-last:center;
+    cursor: pointer;
+    font-family:'Rozha One', serif;;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: bold;
+    min-width: 130px;
+}
+
