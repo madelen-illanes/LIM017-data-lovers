@@ -7,3 +7,7 @@ export const example = () => {
 export const anotherExample = () => {
   return 'OMG';
 };
+
+export const showAll = (pokemonInfo) => {
+  return pokemonInfo;
+};
