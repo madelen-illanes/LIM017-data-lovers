@@ -4,6 +4,23 @@
   margin-right: auto;
   display: block;
 }
+.contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pokemon-div{
+  max-width: fit-content;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon-img{
+  max-width: 50px;
+}
+.pokemon-img:hover {
+  transform: scale(2.5);
+}
 
 
 
@@ -26,7 +43,7 @@
 }
 
   
-  body{
+  /*body{
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,5 +115,5 @@
     font-size: 100%;
     font-weight: bold;
     min-width: 130px;
-}
+}*/
 
