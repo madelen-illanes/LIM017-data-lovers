@@ -1,8 +1,4 @@
-// estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
-};
 export const tipoPokemon = (pokemones, str) => {
   return pokemones.filter(pokemones => pokemones.type == str)}
 
@@ -22,7 +18,7 @@ export const tipoPokemon = (pokemones, str) => {
     const poison = pokemones.filter(pokemones => pokemones.type == "posion")
     const fighting = pokemones.filter(pokemones => pokemones.type == "fighting")
     const land = pokemones.filter(pokemones => pokemones.type == "land)*/
-
+      
 
 
 
@@ -32,3 +28,5 @@ export const anotherExample = () => {
 export const showAll = (pokemonInfo) => {
   return pokemonInfo;
 };
+
+

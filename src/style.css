@@ -24,7 +24,8 @@
 
 
 
-@media screen and (max-width: 640px) {
+
+/*@media screen and (max-width: 640px) {
   #menu {
     background: rgb(102, 102, 204);
   }
@@ -49,17 +50,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-}
-  h1{
-    font-size: 150%;
-    font-family: cursive, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 1.875rem 0rem 1.875rem 0rem;
-    background-color: #a0a8d3;
-    text-align: center;
-    box-sizing: border-box;
-
   }
   #menu{
     margin: 3%;
