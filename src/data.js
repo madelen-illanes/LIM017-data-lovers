@@ -1,6 +1,7 @@
+export const regionPokemon = (pokemones, str) => {
+  return pokemones.filter(pokemones=> pokemones.generation.name==str);
+}
 
-export const tipoPokemon = (pokemones, str) => {
-  return pokemones.filter(pokemones => pokemones.type == str)}
 
     /*const grass = pokemones.filter(pokemones => pokemones.type == "grass");
     const fire = pokemones.filter(pokemones => pokemones.type == "fire" )

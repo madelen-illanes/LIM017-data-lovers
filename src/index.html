@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
     <script src="main.js" type="module"></script>
     <header>
       <img class="logo-pokemon" src="recursos\logo-pokemon.png" />
     </header>
+    <div id="buscador" class="buscador">
+      <input type="search" placeholder="Buscar" />
+    </div>
+    <div class="contenedor" id="pokemones"></div>
+    <div class="botones">
+      <input type="button" value="Tipo de habilidad" />
+      <input type="button" value="Alfabeto" />
+      <input type="button" value="Región" />
+    </div>
   </body>
-  <div class="contenedor" id="pokemones"></div>
-  <div>
-    <input type="button" value="Tipo de habilidad">
-    <input type="button" value="Alfabeto">
-    <input type="button" value="Región">
-  </div>
 </html>
