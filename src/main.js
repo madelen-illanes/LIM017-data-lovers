@@ -69,11 +69,15 @@ function nextPageFire(){
   contenedor.className="oculto"
   divFire.classname="visible"
 }
-// select.addEventListener("input", addFire);
-// select.addEventListener("input", nextPageFire);
+
 select.addEventListener('change', e => {
-  console.log (typePokemon(listaPokemones, e.target.value))
+  const type = typePokemon(listaPokemones, e.target.value)
+  contenedor.innerHTML= ""
+  agregarPokemones(type, contenedor)
 })
+
+
+
 
 //orden alfabetico 
 
