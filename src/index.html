@@ -10,14 +10,28 @@
     <div id="root"></div>
     <script src="main.js" type="module"></script>
     <header>
-      <img class="start" src="recursos\logo-pokemon.png" />
-      <img class="logo-pokemon" src="recursos\logo-pokemon.png" />
+      
     </header>
   </body>
+  
+  <div id="logo"><img class="logo-pokemon" src="recursos\logo-pokemon.png" />
+    <audio id='audio' controls autoplay loop>
+      <source src="batalla.mpeg" type="audio/mpeg">
+  </audio>
+  </div>
+  
+
+
   <div class="contenedor" id="pokemones"></div>
-  <div>
+  <div><input type="text" id="resultPokemon">
+   
+  </div>
+
+
+  <div id="inputs">
     <input type="button" value="Tipo de habilidad">
-    <input type="button" value="Alfabeto">
+    <input type="button" id="order-btn"  value="Alfabeto">
     <input type="button" value="Región">
   </div>
+
 </html>

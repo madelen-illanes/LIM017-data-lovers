@@ -1,7 +1,11 @@
 import {tipoPokemon} from "./data.js";
+import {namePokemonFilter} from "./data.js";
+import {pokemonDescending} from "./data.js";
+import {pokemonUpward} from "./data.js";
 import pokemonInfo from "./data/pokemon/pokemon.js";
-
 //console.log(pokemonInfo,showAll(pokemonInfo));
+
+
 const pokemones = pokemonInfo.pokemon;
 function mostrarHTML(pokemonInfo) {
   let contenedor = document.getElementById("pokemones");
@@ -26,4 +30,53 @@ function mostrarHTML(pokemonInfo) {
 }
 mostrarHTML(pokemonInfo);
 
-console.log (tipoPokemon(pokemones,"grass"))
+
+   // button ordenar falta definir
+  /*const imputext = document.getElementById("resulPokemon");
+  imputext.addEventListener("keyup",() => {
+  const pokemones= document.getElementById("pokemones").value;
+  const  resultPokemon = document.getElementById("resultPokemon").value;
+  const pokemonList= resultPokemon.map(function(pokemones){
+  return `<li class="contenedor">
+  <img class="tagImgPokemon" src"${"pokemon.img"}>
+  </li>`
+
+})
+
+})
+imputext.innerHtml= `${pokemonList}`;*/
+
+
+  // buscar definir
+  const buttonorder = document.getElementById("order-btn");
+  buttonorder.addEventListener("click",function(){
+  const pokemones= document.getElementById('pokemones').value;
+  const result=document.getElementById('result');
+  const resultOrder=pokemonDescending(pokemones);
+  const pokemonlist= resultOrder.map(function(pokemon){
+    return `<li class="contenedor">
+    <p class ="imgPokemon">${pokemon.img}</p>
+    </li>`
+  });
+  result.innerHtml= `${pokemonList}`;
+
+
+
+
+
+//display none y block
+/*const startbutton = document.getElementById("start-btn");  
+startbutton.addEventListener("click",() =>{
+document.getElementById("go").style.display = "none";
+document.getElementById("logo").style.display = "block";
+document.getElementById("pokemones").style.display = "block";
+document.getElementById("inputs").style.display = "block";
+}
+)*/
+
+
+//PRUEBAS CONSOLE Long
+//console.log (tipoPokemon(pokemones,"grass"))
+//console.log(namePokemonFilter(pokemones,"onix"))
+//console.table(pokemonDescending(pokemones))
+//console.table(pokemonUpward(pokemones))
