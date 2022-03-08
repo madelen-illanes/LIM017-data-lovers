@@ -1,14 +1,10 @@
-import {tipoPokemon} from "./data.js";
-import {namePokemonFilter} from "./data.js";
-import {pokemonDescending} from "./data.js";
-import {pokemonUpward} from "./data.js";
+import {regionPokemon, typePokemon, pokemonDescending, pokemonUpward, namePokemonFilter} from "./data.js";
 import pokemonInfo from "./data/pokemon/pokemon.js";
 //console.log(pokemonInfo,showAll(pokemonInfo));
 
+const listaPokemones = pokemonInfo.pokemon
 
-const pokemones = pokemonInfo.pokemon;
-function mostrarHTML(pokemonInfo) {
-  let contenedor = document.getElementById("pokemones");
+function agregarPokemones(pokemones, contenedor) {
   for (let i = 0; i < pokemones.length; i = i + 1) {
     let pokemon = pokemones[i];
     let tagImgPokemon = pokemon.img;
@@ -19,64 +15,83 @@ function mostrarHTML(pokemonInfo) {
     imgPokemon.src = tagImgPokemon;
     imgPokemon.className= "pokemon-img"
     let nodoNombre = document.createElement("spam")
-    //nodoNombre.textContent = namePokemon
+    nodoNombre.textContent = namePokemon
     nodoNombre.className = "nombre-item"
     divPokemon.appendChild(imgPokemon);
-    //divPokemon.appendChild(nodoNombre);
+    divPokemon.appendChild(nodoNombre);
     contenedor.appendChild(divPokemon);
-    //contenedor.appendChild(nodoNombre);
-    //contenedor.appendChild imgPokemon);
   }
 }
-mostrarHTML(pokemonInfo);
+//HTML
+const contenedor = document.getElementById("pokemones");
+const divRegiones = document.getElementById("region");
+const divKanto = document.getElementById("kanto");
+const divJohto = document.getElementById("johto");
+const btnRegion = document.getElementById("btnRegion");
+const divFire = document.getElementById("typeFire")
+const select = document.getElementById("selection")
+const divAscendente = document.getElementById("ascendente")
 
+agregarPokemones(listaPokemones, contenedor);
 
-   // button ordenar falta definir
-  /*const imputext = document.getElementById("resulPokemon");
-  imputext.addEventListener("keyup",() => {
-  const pokemones= document.getElementById("pokemones").value;
-  const  resultPokemon = document.getElementById("resultPokemon").value;
-  const pokemonList= resultPokemon.map(function(pokemones){
-  return `<li class="contenedor">
-  <img class="tagImgPokemon" src"${"pokemon.img"}>
-  </li>`
+let pokemonKanto = regionPokemon(listaPokemones,"kanto");
+let pokemonJohto = regionPokemon(listaPokemones,"johto");
+divRegiones.appendChild(divKanto)
+divRegiones.appendChild(divJohto)
+//agregarPokemones(pokemonJohto, divJohto);
+//agregarPokemones(pokemonKanto, divKanto);
+//divRegiones.appendChild(divKanto)
+//divRegiones.appendChild(divJohto)
 
-})
-
-})
-imputext.innerHtml= `${pokemonList}`;*/
-
-
-  // buscar definir
-  const buttonorder = document.getElementById("order-btn");
-  buttonorder.addEventListener("click",function(){
-  const pokemones= document.getElementById('pokemones').value;
-  const result=document.getElementById('result');
-  const resultOrder=pokemonDescending(pokemones);
-  const pokemonlist= resultOrder.map(function(pokemon){
-    return `<li class="contenedor">
-    <p class ="imgPokemon">${pokemon.img}</p>
-    </li>`
-  });
-  result.innerHtml= `${pokemonList}`;
-
-
-
-
-
-//display none y block
-/*const startbutton = document.getElementById("start-btn");  
-startbutton.addEventListener("click",() =>{
-document.getElementById("go").style.display = "none";
-document.getElementById("logo").style.display = "block";
-document.getElementById("pokemones").style.display = "block";
-document.getElementById("inputs").style.display = "block";
+function pageRegion() {
+  agregarPokemones(pokemonJohto, divJohto);
+  agregarPokemones(pokemonKanto, divKanto);
 }
-)*/
+function nextPage(){
+  contenedor.className = "oculto"
+  divRegiones.className = "visible"
+}
 
 
-//PRUEBAS CONSOLE Long
-//console.log (tipoPokemon(pokemones,"grass"))
-//console.log(namePokemonFilter(pokemones,"onix"))
-//console.table(pokemonDescending(pokemones))
-//console.table(pokemonUpward(pokemones))
+btnRegion.addEventListener("click", pageRegion)
+btnRegion.addEventListener("click", nextPage)
+
+
+let firePokemon = typePokemon (listaPokemones, "fire")
+//console.log (firePokemon)
+
+function addFire(){
+  agregarPokemones(firePokemon, divFire)
+}
+
+function nextPageFire(){
+  contenedor.className="oculto"
+  divFire.classname="visible"
+}
+
+select.addEventListener('change', e => {
+  const type = typePokemon(listaPokemones, e.target.value)
+  contenedor.innerHTML= ""
+  agregarPokemones(type, contenedor)
+})
+
+
+//orden alfabetico 
+
+const ordenAscendente = pokemonUpward (listaPokemones)
+
+function addAscendete(){
+agregarPokemones (ordenAscendente, divAscendente)
+}
+
+
+
+//btnRegion.addEventListener("click", agregarPokemones(pokemonJohto, divRegiones))
+
+
+  
+
+
+//mostrarHTML(pokemonKanto);
+//mostrarHTML(pokemonJohto)
+

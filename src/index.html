@@ -7,31 +7,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
     <script src="main.js" type="module"></script>
     <header>
       
     </header>
+    <div id="buscador" class="buscador">
+      <input type="search" placeholder="Buscar" />
+    </div>
+    <div id="pokemones" class="visible"></div>
+    <div id="region" class="oculto"></div>
+      <div id="kanto" class="kanto"></div>
+      <div id="johto" class="johto"></div>
+
+    <div class= "oculto" id="typeFire"></div>
+    <div id="ascendente"></div> 
+
+    <div class="botones">
+      <input type="button" value="Alfabeto" />
+      <input type="button" value="Región" id="btnRegion" />
+
+      <select name="SELECTION" id="selection">
+        <option value disabled selected>Tipo de Pokemon</option>
+        <option value="fire">Fire</option> 
+        <option value="water">Water</option>
+        <option value="air">Air</option>   
+        <option value="plant">Plant</option>
+        <option value="electric">Electric</option>
+      </select>
+      <select name="ORDER" id="orderlist">
+        <option value disable selected>Order Pokemon</option>
+        <option value="az">Order Upward</option>
+        <option></option>
+
+      </select>
+    </div>
   </body>
-  
-  <div id="logo"><img class="logo-pokemon" src="recursos\logo-pokemon.png" />
-    <audio id='audio' controls autoplay loop>
-      <source src="batalla.mpeg" type="audio/mpeg">
-  </audio>
-  </div>
-  
-
-
-  <div class="contenedor" id="pokemones"></div>
-  <div><input type="text" id="resultPokemon">
-   
-  </div>
-
-
-  <div id="inputs">
-    <input type="button" value="Tipo de habilidad">
-    <input type="button" id="order-btn"  value="Alfabeto">
-    <input type="button" value="Región">
-  </div>
-
 </html>
