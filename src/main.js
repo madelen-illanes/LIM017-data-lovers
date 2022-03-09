@@ -30,7 +30,8 @@ const divJohto = document.getElementById("johto");
 const btnRegion = document.getElementById("btnRegion");
 const divFire = document.getElementById("typeFire")
 const select = document.getElementById("selection")
-const divAscendente = document.getElementById("ascendente")
+const search = document.getElementById("buscador")
+
 
 agregarPokemones(listaPokemones, contenedor);
 
@@ -77,21 +78,37 @@ select.addEventListener('change', e => {
 
 
 //orden alfabetico 
+inputaz.addEventListener('click', e => {
+  const ordern = pokemonUpward(listaPokemones, e.target.value)
+  contenedor.innerHTML= ""
+  agregarPokemones(ordern, contenedor)
+})
 
-const ordenAscendente = pokemonUpward (listaPokemones)
+inputza.addEventListener('click', e => {
+  const orderndescending = pokemonDescending(listaPokemones, e.target.value)
+  contenedor.innerHTML= ""
+  agregarPokemones(orderndescending, contenedor)
+})
 
-function addAscendete(){
-agregarPokemones (ordenAscendente, divAscendente)
-}
+search.addEventListener('keyup', e => {
+  const search = namePokemonFilter(listaPokemones, e.target.value)
+  contenedor.innerHTML= ""
+  agregarPokemones(search, contenedor)
+  
+})
+
 
 
 
 //btnRegion.addEventListener("click", agregarPokemones(pokemonJohto, divRegiones))
-
+//console.table(pokemonUpward(pokemones))
+console.log(namePokemonFilter(pokemones,"pikachu"))
+//console.table(pokemonDescending(pokemones))
 
   
 
 
 //mostrarHTML(pokemonKanto);
 //mostrarHTML(pokemonJohto)
+
 

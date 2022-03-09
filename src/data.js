@@ -29,8 +29,11 @@ export const pokemonUpward = (pokemones) => {
   })
 }
 
+
+
 export const namePokemonFilter = (pokemones, resultPokemon) => {
-  const filteredPokemon = pokemones.filter(pokemones => pokemones.name===resultPokemon);
+  const filteredPokemon = pokemones.filter(pokemones => pokemones.name==resultPokemon);
+  
   return filteredPokemon;
-  }
+}
 
