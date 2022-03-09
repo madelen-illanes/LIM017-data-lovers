@@ -9,32 +9,38 @@
   <body>
     <script src="main.js" type="module"></script>
     <header>
-      <img class="logo-pokemon" src="recursos\logo-pokemon.png" />
+      <img id="logoPokemon" class="logo-pokemon" src="recursos\logo-pokemon.png" />
     </header>
     <div id="buscador" class="buscador">
-      <input type="search" placeholder="Buscar" />
+      <input id="search" type="search" placeholder="Buscar"/>
     </div>
     <div id="pokemones" class="visible"></div>
-    <div id="region" class="oculto"></div>
-      <div id="kanto" class="kanto"></div>
-      <div id="johto" class="johto"></div>
-
-    <div class= "oculto" id="typeFire"></div>
-    <div id="ascendente"></div> 
 
     <div class="botones">
-      <input type="button" value="Alfabeto" />
-      <input type="button" value="Región" id="btnRegion" />
+      <select name="SELECTION1" id="selection1">
+        <option value disabled selected>Regiones</option>
+        <option value="johto">Johto</option>
+        <option value="kanto">Kanto</option>
+      </select>
 
       <select name="SELECTION" id="selection">
         <option value disabled selected>Tipo de Pokemon</option>
-        <option value="fire">Fire</option> 
+        <option value="fire">Fire</option>
         <option value="water">Water</option>
-        <option value="air">Air</option>   
-        <option value="plant">Plant</option>
+        <option value="normal">Normal</option>
+        <option value="grass">Grass</option>
         <option value="electric">Electric</option>
+      </select>
+
+      <select name="ORDER" id="selection2">
+        <option value disable selected>Order Pokemon</option>
+        <option value="az">Order Upward</option>
+        <option value="za">Order Descendig</option>
+        <option></option>
 
       </select>
+
+
     </div>
   </body>
 </html>
