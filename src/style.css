@@ -10,6 +10,7 @@ display: block
   margin-right: auto;
   display: block;
   padding: 10px;
+  cursor: pointer;
 }
 .buscador{
   display: flex;
@@ -22,7 +23,7 @@ display: block
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 60px;
+  padding: 21px;
   padding-bottom: 20px;
 }
 #pokemones{
@@ -33,31 +34,7 @@ display: block
   gap: 0px;
   justify-content: center;
 }
-#region{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 10px;
-  gap: 0px;
-  justify-content: center;
-}
-.johto{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 45%;
-  border: 2px red solid;
-  justify-content: center;
-  height: fit-content;
-}
-.kanto{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 45%;
-  border: 2px rgb(15, 158, 91) solid;
-  justify-content: center;
-}
+
 .pokemon-div{
   max-width: fit-content;
   display:flex;
@@ -65,7 +42,7 @@ display: block
   align-items: center;
 }
 .pokemon-img{
-  max-width: 50px;
+  max-width: 39px;
   opacity: 1;
   z-index:-1;
 }
@@ -85,91 +62,20 @@ opacity: 0.9;
   background:rgb(99, 97, 97);
   border-radius: 2px;
   font-family: monospace;
-  color:white
+  color:white;
 }
 
 
 
 
-/*@media screen and (max-width: 640px) {
-  #menu {
-    background: rgb(102, 102, 204);
-  }
+@media screen and (max-width: 640px) {
+  #menu {  }
 }
 
 @media screen and (min-width: 640px) and (max-width: 1280px) {
-  #menu {
-    background: white;
-  }
+  #menu {  }
 }
 
 @media screen and (min-width: 1280px) {
-  #menu {
-    background: #FFDE00;
-  }
+  #menu {  }
 }
-
-  
-  /*body{
-    background-size: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-  #menu{
-    margin: 3%;
-    padding: 2%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  #selection{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid #a0a8d3;
-    box-sizing: border-box;
-    color: #3bbb66ec;
-    text-align-last:center;
-    cursor: pointer;
-    font-family:'Rozha One', serif;;
-    text-transform: uppercase;
-    font-size: 100%;
-    font-weight: bold;
-    min-width: 130px;
-}
-  
-#order{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid #a0a8d3;
-    box-sizing: border-box;
-    color: #3bbb66ec;
-    text-align-last:center;
-    cursor: pointer;
-    font-family:'Rozha One', serif;;
-    text-transform: uppercase;
-    font-size: 100%;
-    font-weight: bold;
-    min-width: 130px;
-}
-
-#region{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid #a0a8d3;
-    box-sizing: border-box;
-    color: #ffffff;
-    text-align-last:center;
-    cursor: pointer;
-    font-family:'Rozha One', serif;;
-    text-transform: uppercase;
-    font-size: 100%;
-    font-weight: bold;
-    min-width: 130px;
-}*/
-
