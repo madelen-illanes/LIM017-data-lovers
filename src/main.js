@@ -8,8 +8,8 @@ import pokemonInfo from "./data/pokemon/pokemon.js";
 //console.log(pokemonInfo,showAll(pokemonInfo));
 
 const listaPokemones = pokemonInfo.pokemon;
-let nombre1 = listaPokemones[1]["generation"]["name"];
-console.log(nombre1);
+
+
 function agregarPokemones(pokemones, contenedor) {
   for (let i = 0; i < pokemones.length; i = i + 1) {
     let pokemon = pokemones[i];
@@ -57,7 +57,7 @@ select1.addEventListener("change", (e) => {
 });
 
 select2.addEventListener("change", (e) => {
-  console.log(e.target.value);
+ 
   let order = sortData(listaPokemones, "name", e.target.value);
   contenedor.innerHTML = "";
   agregarPokemones(order, contenedor);
