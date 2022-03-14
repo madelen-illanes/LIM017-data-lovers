@@ -1,3 +1,4 @@
+
 export const regionPokemon = (pokemones, str) => {
   return pokemones.filter(pokemon=> {
     return pokemon.generation.name==str
