@@ -12,13 +12,6 @@ display: block
   padding: 10px;
   cursor: pointer;
 }
-.buscador{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding: 15px 0;
-  padding-right: 60px;
-}
 .botones{
   display: flex;
   flex-direction: row;
@@ -61,7 +54,7 @@ opacity: 0.9;
   font-size: 7px;
   background:rgb(99, 97, 97);
   border-radius: 2px;
-  font-family: monospace;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color:white;
 }
 
@@ -79,3 +72,36 @@ opacity: 0.9;
 @media screen and (min-width: 1280px) {
   #menu {  }
 }
+<<<<<<< HEAD
+=======
+.select123{
+  border: 1px solid #e2eded;
+  border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 26px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0 55px;
+}
+.buscador{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 15px 0;
+  padding-right: 60px;
+}
+#search{
+  border: 1px solid #e2eded;
+  border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 26px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 22px;
+  border-radius: 4px;
+  padding: 0 55px;
+}
+>>>>>>> 3357c098bd2ccaec292bccd3f7445cf7881aea45

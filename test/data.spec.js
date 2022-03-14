@@ -1,45 +1,39 @@
-import { namePokemonFilter, typePokemon } from '../src/data.js';
+//import { example, anotherExample } from '../src/data.js';
+
+
+import { namePokemonFilter, typePokemon, regionPokemon, sortData } from '../src/data.js';
 //import {pokemonInfo} from '../src/data/pokemon/pokemon.js';
 
 const pokemonInfo =  [{
- 
   "name": "bulbasaur",
   "generation": {
     "num": "generation i",
     "name": "kanto"
   },
-  
   "pokemon-rarity": "normal",
   "type": [
     "grass",
     "poison"
   ],
- 
 },
 {
- 
   "name": "ivysaur",
   "generation": {
     "num": "generation i",
     "name": "kanto"
   },
- 
-
   "pokemon-rarity": "normal",
   "type": [
     "grass",
     "poison"
   ],
-  
 },
 {
-
   "name": "ampharos",
   "generation": {
     "num": "generation ii",
     "name": "johto"
   },
- 
   "pokemon-rarity": "normal",
   "type": [
     "electric"
@@ -54,109 +48,114 @@ describe('namePokemonFilter', () => {
     "num": "generation i",
     "name": "kanto"
   },
-  
   "pokemon-rarity": "normal",
   "type": [
     "grass",
     "poison"
   ]
-
-  
 }]
     expect(namePokemonFilter(pokemonInfo,"bulbasaur")).toEqual(listaPokemones);
-  
   });
-
 });
-
-
-
 
 describe('typePokemon', () => {
   it('filters pokemon for type', () => {
-    const listaPokemones =[{
- 
+    const listaPokemones = [{
       "name": "bulbasaur",
       "generation": {
         "num": "generation i",
         "name": "kanto"
       },
-      
       "pokemon-rarity": "normal",
       "type": [
         "grass",
         "poison"
       ],
-     
     },
-  
     {
-    
-      "name": "ampharos",
+      "name": "ivysaur",
       "generation": {
-        "num": "generation ii",
-        "name": "johto"
+        "num": "generation i",
+        "name": "kanto"
       },
-     
       "pokemon-rarity": "normal",
       "type": [
-        "electric"
-      ]
+        "grass",
+        "poison"
+      ],
     }]
-    
-    expect(typePokemon(pokemonInfo,"grass")).toEqual(listaPokemones);
-  
-  });
-
+expect(typePokemon(pokemonInfo,"grass")).toEqual(listaPokemones);
 });
+})
 
-
-/*describe('regionPokemon', () => {
+describe('regionPokemon', () => {
   it('filters pokemon for region', () => {
-
-  
-    expect(regionPokemon(pokemonInfo)).toBe('region');
-  });
-
+    const listaPokemones = [{
+      "name": "bulbasaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    },
+    {
+      "name": "ivysaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    }]
+expect(regionPokemon(pokemonInfo,"kanto")).toEqual(listaPokemones);
 });
-
-describe('typePokemon', () => {
-  it('filter type pokemon', () => {
-
-  
-    expect(typePokemon(pokemonInfo)).toBe('type');
-  });
-
-});
+})
 
 describe('sortData', () => {
-  it('order data', () => {
-
-  
-    expect(sortData(pokemonInfo)).toBe('az');
-  });
-
+  it('filters pokemon for alphabet', () => {
+    const listaPokemones = [
+      {
+        "name": "ampharos",
+        "generation": {
+          "num": "generation ii",
+          "name": "johto"
+        },
+        "pokemon-rarity": "normal",
+        "type": [
+          "electric"
+        ]
+      },
+      {
+      "name": "bulbasaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    },
+    {
+      "name": "ivysaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    }]
+expect(sortData(pokemonInfo, "name", "az")).toEqual(listaPokemones);
 });
-
-
-
-/*describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});*/
+})
