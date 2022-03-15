@@ -60,5 +60,3 @@ inputSearch.addEventListener("keyup", (e) => {
   contenedor.innerHTML = "";
   agregarPokemones(searchPokemon, contenedor);
 });
-
-console.log(compute(listaPokemones,"grass"))

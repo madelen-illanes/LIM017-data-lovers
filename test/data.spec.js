@@ -164,6 +164,17 @@ describe('compute', () => {
   it('porcentage pokemon by region', () => {
     const listaPokemones = [
       {
+        "name": "ampharos",
+        "generation": {
+          "num": "generation ii",
+          "name": "johto"
+        },
+        "pokemon-rarity": "normal",
+        "type": [
+          "electric"
+        ]
+      },
+      {
       "name": "bulbasaur",
       "generation": {
         "num": "generation i",
@@ -187,6 +198,6 @@ describe('compute', () => {
         "poison"
       ],
     }]
-expect(compute(pokemonInfo, "grass")).toEqual(listaPokemones);
+expect(compute(pokemonInfo, "24")).toEqual(listaPokemones);
 });
 })

@@ -65,3 +65,6 @@ export const sortData =(pokemones, sortBy, sortOrder) => {
     const fighting = pokemones.filter(pokemones => pokemones.type == "fighting")
     const land = pokemones.filter(pokemones => pokemones.type == "land)*/
       
+
+
+
