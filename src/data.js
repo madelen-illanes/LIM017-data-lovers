@@ -1,3 +1,6 @@
+export const showAll = (pokemonInfo) => {
+  return pokemonInfo;
+};
 
 export const regionPokemon = (pokemones, str) => {
   return pokemones.filter(pokemon=> {
@@ -8,6 +11,11 @@ export const regionPokemon = (pokemones, str) => {
 export const typePokemon = (pokemones, str) => {
   return pokemones.filter(pokemones=> pokemones.type.includes(str));
 }
+
+export const namePokemonFilter = (pokemones, resultPokemon) => {
+  const filteredPokemon = pokemones.filter(pokemon => pokemon.name.includes(resultPokemon));
+  return filteredPokemon;
+  }
 
 export const sortData =(pokemones, sortBy, sortOrder) => {
   if(sortOrder == 'za'){
@@ -33,12 +41,12 @@ export const sortData =(pokemones, sortBy, sortOrder) => {
     })
   }
 
-
-export const namePokemonFilter = (pokemones, resultPokemon) => {
-  const filteredPokemon = pokemones.filter(pokemon => pokemon.name.includes(resultPokemon));
-  return filteredPokemon;
-  }
-
+  export const compute = (pokemones, str) => {
+    let pokemonesRegion = pokemones.filter(pokemones=> pokemones.type.includes(str));
+    let operacion = (pokemonesRegion.length*100)/pokemones.length 
+    return Math.round(operacion);
+    }
+  
 
     /*const grass = pokemones.filter(pokemones => pokemones.type == "grass");
     const fire = pokemones.filter(pokemones => pokemones.type == "fire" )
@@ -58,14 +66,5 @@ export const namePokemonFilter = (pokemones, resultPokemon) => {
     const land = pokemones.filter(pokemones => pokemones.type == "land)*/
       
 
-
-
-export const anotherExample = () => {
-  return 'OMG';
-};
-
-export const showAll = (pokemonInfo) => {
-  return pokemonInfo;
-};
 
 

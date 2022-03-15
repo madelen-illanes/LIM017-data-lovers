@@ -7,7 +7,7 @@
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Checklist](#9-checklist)
+* [6. Checklist](#6-checklist)
 
 ***
 
@@ -25,12 +25,11 @@ Partiendo de los datos mencionados, se diseñó una interfaz de fácil y prácti
 ## 2. Resumen del proyecto
 
 El proyecto se basa en una página web, en la cual podemos visualizar un conjunto de datos de uno de los mejores juegos para móviles alrededor del mundo(Pokemon Go), de acuerdo a las necesidades presentadas por los usuarios.
-Como versión final nuestra página web permite visualizar la data, filtrarla, ordenarla y hacer algún cálculo agregado.
-
-Pokemon porporciona información para que el usuario pueda elegir su mejor opción; por lo cuál podran visualizar a todos lo pokemones por imagen y nombre, elegir entre la región que pertenece, el tipo de pokemon, veficar en orden alfabético y relizar una busqueda específica por el nombre de cada uno de ellos.
+Como versión final nuestra página web permite visualizar la data, filtrarla, ordenarla y obtener un porcentaje correspondiente al tipo.
+Pokemon porporciona información para que el usuario pueda elegir su mejor opción; por lo cuál podran visualizar a todos lo pokemones por imagen y nombre, elegir entre la región que pertenece, el tipo de pokemon, veficar en orden alfabético y realizar una busqueda específica por el nombre de cada uno de ellos.
 ## 3. Objetivos de aprendizaje   
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Se ha tomado todos los objetivos de aprendizaje para la elaboración del proyecto.
 
 ### HTML
 
@@ -114,11 +113,11 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 Los criterios para considerar que has completado este proyecto son:
 ### Historias de usuario
 
-* Los jugadores Pokemon necesitan tener estrategias, por tal motivo planteamos estas diferentes histórias de usuarios que resolveran sus necesidades a la hora de elegir su mejor opción.
+* Los jugadores Pokemon necesitan tener estrategias, por tal motivo planteamos estas diferentes historias de usuarios que resolveran sus necesidades a la hora de elegir su mejor opción.
 
-![Historia de Usuario 1](Historia1.png)
-![Historia de Usuario 2](Historia2.png)
-![Historia de Usuario 3](Historia3.png)
+![Historia1](Historia1.png)
+![Historia2](Historia2.png)
+![Historia3](Historia3.png)
 
 ### Diseño de la Interfaz de Usuario
 
@@ -126,20 +125,13 @@ Los criterios para considerar que has completado este proyecto son:
 
 Boceto del prototipo, pensado en el usuario.
 
-![Prototipo de Baja Fidelidad](Prototipo1.png)
-![Prototipo de Baja Fidelidad](Prototipo2.png)
+![Prototipo1](Prototipo1.png)
+![Prototipo2](Prototipo2.png)
 #### Prototipo de alta fidelidad
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
-
-#### Testeos de usabilidad
-
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+El diseño se realizó conforme a los parámetros designados al iniciar al proyecto 
+![Prototipo3](Prototipo3.png)
+Link de prototipo : [Figma](https://www.figma.com/proto/OhIvT8FRzP4oiqD8eu5m80/DATA-POKEMON?node-id=5%3A2&scaling=contain&page-id=0%3A1).
 ## 6. Checklist
 
 * [✔] Usa VanillaJS.

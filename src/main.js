@@ -1,9 +1,4 @@
-import {
-  regionPokemon,
-  typePokemon,
-  sortData,
-  namePokemonFilter,
-} from "./data.js";
+import {regionPokemon, typePokemon, sortData, namePokemonFilter, compute} from "./data.js";
 import pokemonInfo from "./data/pokemon/pokemon.js";
 //console.log(pokemonInfo,showAll(pokemonInfo));
 
@@ -44,7 +39,6 @@ logoPokemon.addEventListener("click", refresh);
 
 select.addEventListener("change", (e) => {
   const type = typePokemon(listaPokemones, e.target.value);
-  console.log (type)
   contenedor.innerHTML = "";
   agregarPokemones(type, contenedor);
 });

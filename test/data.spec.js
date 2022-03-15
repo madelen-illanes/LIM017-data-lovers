@@ -1,7 +1,7 @@
 //import { example, anotherExample } from '../src/data.js';
 
 
-import { namePokemonFilter, typePokemon, regionPokemon, sortData } from '../src/data.js';
+import { namePokemonFilter, typePokemon, regionPokemon, sortData, compute} from '../src/data.js';
 //import {pokemonInfo} from '../src/data/pokemon/pokemon.js';
 
 const pokemonInfo =  [{
@@ -157,5 +157,47 @@ describe('sortData', () => {
       ],
     }]
 expect(sortData(pokemonInfo, "name", "az")).toEqual(listaPokemones);
+});
+})
+
+describe('compute', () => {
+  it('porcentage pokemon by region', () => {
+    const listaPokemones = [
+      {
+        "name": "ampharos",
+        "generation": {
+          "num": "generation ii",
+          "name": "johto"
+        },
+        "pokemon-rarity": "normal",
+        "type": [
+          "electric"
+        ]
+      },
+      {
+      "name": "bulbasaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    },
+    {
+      "name": "ivysaur",
+      "generation": {
+        "num": "generation i",
+        "name": "kanto"
+      },
+      "pokemon-rarity": "normal",
+      "type": [
+        "grass",
+        "poison"
+      ],
+    }]
+expect(compute(pokemonInfo, "24")).toEqual(listaPokemones);
 });
 })
