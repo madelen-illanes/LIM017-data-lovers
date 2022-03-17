@@ -115,9 +115,9 @@ Los criterios para considerar que has completado este proyecto son:
 
 * Los jugadores Pokemon necesitan tener estrategias, por tal motivo planteamos estas diferentes historias de usuarios que resolveran sus necesidades a la hora de elegir su mejor opción.
 
-![Historia1](Historia1.png)
-![Historia2](Historia2.png)
-![Historia3](Historia3.png)
+![historia1](historia1.png)
+![historia2](historia2.png)
+![historia3](historia3.png)
 
 ### Diseño de la Interfaz de Usuario
 
@@ -125,12 +125,12 @@ Los criterios para considerar que has completado este proyecto son:
 
 Boceto del prototipo, pensado en el usuario.
 
-![Prototipo1](Prototipo1.png)
-![Prototipo2](Prototipo2.png)
+![prototipo1](prototipo1.png)
+![prototipo2](prototipo2.png)
 #### Prototipo de alta fidelidad
 
 El diseño se realizó conforme a los parámetros designados al iniciar al proyecto 
-![Prototipo3](Prototipo3.png)
+![prototipo3](prototipo3.png)
 Link de prototipo : [Figma](https://www.figma.com/proto/OhIvT8FRzP4oiqD8eu5m80/DATA-POKEMON?node-id=5%3A2&scaling=contain&page-id=0%3A1).
 ## 6. Checklist
 
