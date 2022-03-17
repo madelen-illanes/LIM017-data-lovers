@@ -37,9 +37,13 @@ export const sortData =(pokemones, sortBy, sortOrder) => {
 export const namePokemonFilter = (pokemones, resultPokemon) => {
   const filteredPokemon = pokemones.filter(pokemon => pokemon.name.includes(resultPokemon));
   return filteredPokemon;
-  }
+  }   
 
-
+  export const compute = (pokemones, str) => {
+    let pokemonesRegion = pokemones.filter(pokemones=> pokemones.type.includes(str));
+    let operacion = (pokemonesRegion.length*100)/pokemones.length 
+    return Math.round(operacion)
+    }
     /*const grass = pokemones.filter(pokemones => pokemones.type == "grass");
     const fire = pokemones.filter(pokemones => pokemones.type == "fire" )
     const water = pokemones.filter(pokemones => pokemones.type == "water" )

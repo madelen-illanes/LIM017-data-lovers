@@ -1,7 +1,7 @@
 //import { example, anotherExample } from '../src/data.js';
 
 
-import { namePokemonFilter, typePokemon, regionPokemon, sortData } from '../src/data.js';
+import { namePokemonFilter, typePokemon, regionPokemon, sortData, compute } from '../src/data.js';
 //import {pokemonInfo} from '../src/data/pokemon/pokemon.js';
 
 const pokemonInfo =  [{
@@ -157,5 +157,11 @@ describe('sortData', () => {
       ],
     }]
 expect(sortData(pokemonInfo, "name", "az")).toEqual(listaPokemones);
+});
+})
+
+describe('compute', () => {
+  it('porcentage pokemon by region', () => {
+expect(compute(pokemonInfo, "grass")).toEqual(67);
 });
 })
