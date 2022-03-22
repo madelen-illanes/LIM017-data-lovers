@@ -15,6 +15,7 @@
   "dependencies": {
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@google-web-components/google-chart": "^5.0.1",
     "babel-jest": "^27.0.1",
     "eslint": "^8.3.0",
     "gh-pages": "^3.1.0",

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import {
   regionPokemon,
   typePokemon,
@@ -6,6 +7,7 @@ import {
   compute,
 } from "./data.js";
 import pokemonInfo from "./data/pokemon/pokemon.js";
+
 
 //console.log(pokemonInfo,showAll(pokemonInfo));
 
