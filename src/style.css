@@ -100,3 +100,11 @@ opacity: 0.9;
   border-radius: 4px;
   padding: 0 55px;
 }
+#porcentaje{
+  border: 1px solid #e2eded;
+  border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+  font-size: 14px;
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+}

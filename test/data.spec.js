@@ -162,42 +162,6 @@ expect(sortData(pokemonInfo, "name", "az")).toEqual(listaPokemones);
 
 describe('compute', () => {
   it('porcentage pokemon by region', () => {
-    const listaPokemones = [
-      {
-        "name": "ampharos",
-        "generation": {
-          "num": "generation ii",
-          "name": "johto"
-        },
-        "pokemon-rarity": "normal",
-        "type": [
-          "electric"
-        ]
-      },
-      {
-      "name": "bulbasaur",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
-      },
-      "pokemon-rarity": "normal",
-      "type": [
-        "grass",
-        "poison"
-      ],
-    },
-    {
-      "name": "ivysaur",
-      "generation": {
-        "num": "generation i",
-        "name": "kanto"
-      },
-      "pokemon-rarity": "normal",
-      "type": [
-        "grass",
-        "poison"
-      ],
-    }]
-expect(compute(pokemonInfo, "24")).toEqual(listaPokemones);
+expect(compute(pokemonInfo, "grass")).toEqual(67);
 });
 })

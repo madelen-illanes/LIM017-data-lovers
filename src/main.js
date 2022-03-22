@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import {regionPokemon, typePokemon, sortData, namePokemonFilter, compute} from "./data.js";
 import pokemonInfo from "./data/pokemon/pokemon.js";
-//console.log(pokemonInfo,showAll(pokemonInfo));
+
 
 const listaPokemones = pokemonInfo.pokemon;
 function agregarPokemones(pokemones, contenedor) {
@@ -21,13 +22,15 @@ function agregarPokemones(pokemones, contenedor) {
     contenedor.appendChild(divPokemon);
   }
 }
-//HTML
+
 const logoPokemon = document.getElementById("logoPokemon");
 const contenedor = document.getElementById("pokemones");
 const select = document.getElementById("selection");
 const select1 = document.getElementById("selection1");
 const select2 = document.getElementById("selection2");
 const inputSearch = document.getElementById("search");
+const botonPorcentaje = document.getElementById("porcentaje");
+const divPorcentaje = document.getElementById("chart_div");
 
 agregarPokemones(listaPokemones, contenedor);
 
@@ -36,6 +39,7 @@ function refresh() {
   agregarPokemones(listaPokemones, contenedor);
 }
 logoPokemon.addEventListener("click", refresh);
+
 
 select.addEventListener("change", (e) => {
   const type = typePokemon(listaPokemones, e.target.value);
@@ -60,3 +64,40 @@ inputSearch.addEventListener("keyup", (e) => {
   contenedor.innerHTML = "";
   agregarPokemones(searchPokemon, contenedor);
 });
+
+botonPorcentaje.addEventListener("click", porcentaje);
+function porcentaje(){
+  contenedor.innerHTML = "";
+  drawChart()
+  contenedor.appendChild(divPorcentaje)
+}
+
+let listaTipos = new Set();
+for (let i = 0; i < listaPokemones.length; i = i + 1) {
+  let pokemonType = listaPokemones[i].type;
+  for (let j = 0; j < pokemonType.length; j = j + 1) {
+    let tipo = pokemonType[j];
+    listaTipos.add(tipo);
+  }
+}
+
+google.charts.load("current", { packages: ["corechart"] });
+
+function drawChart() {
+  
+  var data = new google.visualization.DataTable();
+  data.addColumn("string", "Tipo");
+  data.addColumn("number", "Pocentaje");
+  listaTipos.forEach(tipo => data.addRow([tipo, compute(listaPokemones, tipo)]))
+  var options = {
+    title: "Porcentaje de Pokemones por tipo",
+    width: 500,
+    height: 400,
+    chartArea: {
+      width: 600
+    }
+  };
+
+  var chart = new google.visualization.PieChart(divPorcentaje);
+  chart.draw(data, options);
+}

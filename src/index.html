@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="main.js" type="module"></script>
     <header>
       <img id="logoPokemon" class="logo-pokemon" src="recursos\logo-pokemon.png" />
@@ -32,7 +33,7 @@
         <option value="electric">Electric</option>
       </select>
 
-      <select class ="select123" name="ORDER" id="selection2">
+      <select class ="select123" name="ORDEN" id="selection2">
         <option value disable selected>Orden Pokemon</option>
         <option value="az">Order Upward</option>
         <option value="za">Order Descendig</option>
@@ -40,7 +41,9 @@
 
       </select>
 
+      <input type="button" id="porcentaje" value="Porcentaje">
 
+      <div id="chart_div"></div>
     </div>
   </body>
 </html>
