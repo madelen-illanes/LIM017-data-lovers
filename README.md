@@ -130,7 +130,9 @@ Boceto del prototipo, pensado en el usuario.
 #### Prototipo de alta fidelidad
 
 El diseño se realizó conforme a los parámetros designados al iniciar al proyecto 
+
 ![prototipo3](prototipo3.png)
+
 Link de prototipo : [Figma](https://www.figma.com/proto/OhIvT8FRzP4oiqD8eu5m80/DATA-POKEMON?node-id=5%3A2&scaling=contain&page-id=0%3A1).
 ## 6. Checklist
 
