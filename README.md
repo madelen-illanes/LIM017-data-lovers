@@ -115,9 +115,9 @@ Los criterios para considerar que has completado este proyecto son:
 
 * Los jugadores Pokemon necesitan tener estrategias, por tal motivo planteamos estas diferentes historias de usuarios que resolveran sus necesidades a la hora de elegir su mejor opción.
 
-![historia1](historia1.png)
-![historia2](historia2.png)
-![historia3](historia3.png)
+![historia1](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/historia1.png?raw=true)
+![historia2](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/historia2.png?raw=true)
+![historia3](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/historia3.png?raw=true)
 
 ### Diseño de la Interfaz de Usuario
 
@@ -125,13 +125,13 @@ Los criterios para considerar que has completado este proyecto son:
 
 Boceto del prototipo, pensado en el usuario.
 
-![prototipo1](prototipo1.png)
-![prototipo2](prototipo2.png)
+![prototipo1](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/prototipo1.jpg?raw=true)
+![prototipo2](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/prototipo2.jpg?raw=true)
 #### Prototipo de alta fidelidad
 
 El diseño se realizó conforme a los parámetros designados al iniciar al proyecto 
 
-![prototipo3](prototipo3.png)
+![prototipo3](https://github.com/CarmenMerino/LIM017-data-lovers/blob/main/src/recursos/Prototipo3.png?raw=true)
 
 Link de prototipo : [Figma](https://www.figma.com/proto/OhIvT8FRzP4oiqD8eu5m80/DATA-POKEMON?node-id=5%3A2&scaling=contain&page-id=0%3A1).
 ## 6. Checklist
